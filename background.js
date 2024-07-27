@@ -13,23 +13,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
           "role": "user",
           "parts": [
             {
-              "text": "Que es una extension de chrome"
-            }
-          ]
-        },
-        {
-          "role": "model",
-          "parts": [
-            {
-              "text": "Una extensión de Chrome es un pequeño programa que se instala en tu navegador Chrome y añade nuevas funcionalidades o características a la experiencia de navegación. Son como pequeñas aplicaciones que mejoran tu uso de Chrome.\n\n**¿Qué hacen las extensiones de Chrome?**\n\n* **Mejora la productividad:** Bloqueador de anuncios, herramientas para tomar notas, administradores de contraseñas, etc.\n* **Personaliza tu experiencia:** Cambia el aspecto de la página, agrega nuevas opciones de menú, etc.\n* **Facilita tareas específicas:** Herramientas para redes sociales, traductores, gestores de descargas, etc.\n* **Aumenta la seguridad:**  Bloqueadores de malware, administradores de cookies, etc.\n\n**¿Cómo funcionan?**\n\nLas extensiones de Chrome se basan en tecnologías web como HTML, CSS y JavaScript, lo que permite a los desarrolladores crear interfaces y funcionalidades personalizadas. Se ejecutan en un entorno aislado dentro del navegador, lo que significa que no pueden acceder a tu información personal o afectar el funcionamiento general de tu sistema.\n\n**¿Dónde encontrar extensiones?**\n\nPuedes encontrar una gran variedad de extensiones en la Chrome Web Store: https://chrome.google.com/webstore/category/extensions\n\n**Ejemplos de extensiones populares:**\n\n* **Evernote Web Clipper:** Guarda páginas web, artículos y notas en Evernote.\n* **Grammarly:** Verifica la gramática y ortografía mientras escribes en línea.\n* **LastPass:** Administra y almacena tus contraseñas de forma segura.\n* **uBlock Origin:** Bloquea anuncios y rastreadores.\n* **Momentum:** Reemplaza la nueva pestaña con una hermosa imagen y una cita inspiradora.\n\n**En resumen, las extensiones de Chrome son herramientas útiles que pueden mejorar tu experiencia de navegación, añadir nuevas funcionalidades y personalizar tu navegador según tus necesidades.**\n"
-            }
-          ]
-        },
-        {
-          "role": "user",
-          "parts": [
-            {
-              "text": "INSERT_INPUT_HERE" // Reemplaza con el texto de entrada del usuario
+              "text": `Write an Summary in spanish with an Introduction, Key Insights, Books Summary and Conclusion about the book “${request.bookTitle}” by "${request.author}" the article should be separated by headings and well explained with examples. Take your time. The result should be a json structure with "Title as string, Introduction as string, Key Insights as array, Book Summary as string, conclusión as string".`
             }
           ]
         }
