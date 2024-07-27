@@ -22,5 +22,8 @@
         "128": "icon.png"
     },
     "author": "seagomezar@gmail.com",
-    "default_locale": "es"
+    "default_locale": "es",
+    "permissions": [
+        "storage"
+    ]
 }
