@@ -10,7 +10,7 @@ chrome.runtime.onInstalled.addListener(async function (details) {
   
   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.bookTitle) {
-      let apiKey = 'AIzaSyAtshqsRVD8EQ4n0mOjFppVZfJ9fmUZSwU';
+      let apiKey = 'AIzaSyAmQfphgtzJO4knbRL-Ry8C4cmu_BjrDS8';
       let apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
   
       let requestBody = {

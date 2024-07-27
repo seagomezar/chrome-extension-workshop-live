@@ -7,6 +7,12 @@
         "page": "options.html",
         "open_in_tab": true
     },
+    "content_scripts": [
+    {
+      "matches": ["*://*.librerianacional.com/*"],
+      "js": ["content-script.js"]
+    }
+  ],
     "background": {
         "service_worker": "background.js"
     },
@@ -29,6 +35,13 @@
     "permissions": [
         "storage",
         "activeTab",
-        "tabs"
-    ]
+        "tabs",
+        "scripting"
+    ],
+    "web_accessible_resources": [
+    {
+      "resources": [ "icon.png" ],
+      "matches": [ "*://*.librerianacional.com/*" ]
+    }
+  ]
 }
