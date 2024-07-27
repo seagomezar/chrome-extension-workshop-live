@@ -7,6 +7,9 @@
         "page": "options.html",
         "open_in_tab": true
     },
+    "background": {
+        "service_worker": "background.js"
+    },
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
@@ -24,6 +27,8 @@
     "author": "seagomezar@gmail.com",
     "default_locale": "es",
     "permissions": [
-        "storage"
+        "storage",
+        "activeTab",
+        "tabs"
     ]
 }
