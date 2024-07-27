@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "Mi Aplicación"
+    },
+    "appDescription": {
+        "message": "Mi super aplicación usala para que no te hackeen"
+    },
+    "defaultTitle": {
+        "message": "Mi super aplicación"
+    }
+}

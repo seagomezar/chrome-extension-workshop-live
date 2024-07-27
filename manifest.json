@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "__MSG_appName__",
+    "version": "0.0.1",
+    "description": "__MSG_appDescription__",
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        },
+        "default_title": "__MSG_defaultTitle__"
+    },
+    "icons":{
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "author": "seagomezar@gmail.com",
+    "default_locale": "es"
+}
